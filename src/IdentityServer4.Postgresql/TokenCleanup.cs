@@ -17,6 +17,7 @@ namespace IdentityServer4.Postgresql
         private readonly IServiceProvider _serviceProvider;
         private readonly TimeSpan _interval;
         private CancellationTokenSource _source;
+
         public TokenCleanup(IServiceProvider serviceProvider, ILogger<TokenCleanup> logger, TokenCleanupOptions options)
         {
             if (serviceProvider == null) throw new ArgumentNullException(nameof(serviceProvider));

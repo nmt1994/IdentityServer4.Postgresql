@@ -9,10 +9,12 @@ namespace IdentityServer4.Postgresql.Stores
     public class ClientStore : IClientStore
     {
         private readonly IDocumentSession _documentSession;
+
         public ClientStore(IDocumentSession documentSession)
         {
             _documentSession = documentSession;
         }
+
         public async Task<Client> FindClientByIdAsync(string clientId)
         {
            var client = await _documentSession.LoadAsync<Entities.Client>(clientId).ConfigureAwait(false);

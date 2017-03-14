@@ -29,6 +29,7 @@ namespace IdentityServer4.Postgresql.Extensions
 
             return builder;
         }
+
         public static IIdentityServerBuilder AddConfigurationStoreCache(
            this IIdentityServerBuilder builder)
         {
@@ -55,6 +56,7 @@ namespace IdentityServer4.Postgresql.Extensions
             builder.Services.AddSingleton<TokenCleanup>();
             return builder;
         }
+
         public static IApplicationBuilder UseIdentityServerTokenCleanup(this IApplicationBuilder app, IApplicationLifetime applicationLifetime)
         {
             var tokenCleanup = app.ApplicationServices.GetService<TokenCleanup>();
