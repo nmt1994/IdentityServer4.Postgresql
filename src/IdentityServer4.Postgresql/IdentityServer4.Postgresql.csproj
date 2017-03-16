@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFrameworks>net46</TargetFrameworks>
+    <TargetFrameworks>net46;netcoreapp1.0</TargetFrameworks>
     <AssemblyName>IdentityServer4.Postgresql</AssemblyName>
     <VersionPrefix>2.0.0-rc1</VersionPrefix>
     <Authors>Sifiso Shezi</Authors>
